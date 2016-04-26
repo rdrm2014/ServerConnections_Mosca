@@ -1,0 +1,16 @@
+{
+  "name": "Sport_Connections",
+  "author": "Ricardo Mendes",
+  "version": "0.0.1",
+  "description": "Server_Conns - Node.js",
+  "tecnology": "Node.js",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.13.3",
+    "log4js": "0.6.27",
+    "mosca": "^1.2.0",
+    "nconf": "^0.8.4",
+    "unirest": "^0.4.2",
+    "winston": "^2.2.0"
+  }
+}

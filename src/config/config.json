@@ -1,0 +1,19 @@
+{
+  "title": "Server Connections",
+  "security": {
+    "tokenLife": 3600
+  },
+  "mongoose": {
+    "uri": "mongodb://localhost/serverConnections",
+    "port": 1883
+  },
+  "authentication": {
+    "uri": "http://localhost",
+    "port": 8080
+  },
+  "default": {
+    "api": {
+      "version": "v1"
+    }
+  }
+}
