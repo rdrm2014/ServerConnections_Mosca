@@ -10,7 +10,6 @@ var log = require(src + 'log/log')(module);
 var mosca = require('mosca');
 var AuthMosca = require(process.cwd() + '/lib/AuthMosca.js');
 
-
 var authSystem = new AuthMosca();
 
 var ascoltatore = {
@@ -32,7 +31,6 @@ var moscaSettings = {
         port: 3000,
         bundle: true,
         static: './'
-
     }
 };
 
@@ -42,8 +40,8 @@ server.on('ready', setup);
 
 function setup() {
     server.authenticate = authSystem.authenticate();
-    server.authorizeSubscribe = authSystem.authorizeSubscribe();
-    server.authorizePublish = authSystem.authorizePublish();
+    //server.authorizeSubscribe = authSystem.authorizeSubscribe();
+    //server.authorizePublish = authSystem.authorizePublish();
     console.log('Mosca server is up and running')
 }
 
